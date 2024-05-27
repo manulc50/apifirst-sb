@@ -5,7 +5,7 @@ info:
   termsOfService: https://example.com/terms/
   contact:
     email: johndoe@test.com
-    url: http://example.com/contact
+    url: http://test.com/contact
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
@@ -18,11 +18,11 @@ info:
     # Introduction
 
     guesswork in calling the service.
-# tags:
+tags:
 #   - name: Echo
 #     description: Example echo operations.
-#   - name: User
-#     description: Operations about users.
+    - name: User
+      description: Operations about users.
 #   - name: Tag
 #     description: This is a tag description.
 servers:
