@@ -14,10 +14,6 @@ info:
   description: >
     This is an **example** API to demonstrate features of the OpenAPI
     specification.
-
-    # Introduction
-
-    guesswork in calling the service.
 tags:
     - name: Customer
       description: Customer operations.
