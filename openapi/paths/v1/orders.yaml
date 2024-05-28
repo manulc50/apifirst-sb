@@ -1,12 +1,12 @@
 get:
   tags:
-    - Product
-  summary: Get a list of products
-  description: Get a list of products.
-  operationId: listProducts
+    - Order
+  summary: List Orders
+  description: List Orders
+  operationId: listOrders
   responses:
     '200':
-      description: Success
+      description: Successful Operation
       content:
         application/json:
           schema:
