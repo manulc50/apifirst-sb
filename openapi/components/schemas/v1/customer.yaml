@@ -4,6 +4,8 @@ properties:
     type: string
     format: uuid
     description: Unique identifier representing a specific customer
+    # Para que esta propiedad solo aparezca en la respuesta de una petición http.
+    readOnly: true
   name:
     $ref: name.yaml
   shipToAddress:
