@@ -13,12 +13,14 @@ properties:
   billToAddress:
     $ref: address.yaml
   email:
-    type: string
+    type: [string, 'null'] # Nullable
     maxLength: 255
     minLength: 3
     example: johndoe@test.com
   phone:
-    type: string
+    type:
+      - string
+      - 'null' # Nullable
     maxLength: 15
     minLength: 7
     example: 800-555-1212
@@ -26,6 +28,16 @@ properties:
     type: array
     items:
       $ref: payment_method.yaml
+  dateCreated:
+    type: string
+    format: date-time
+    # Para que esta propiedad solo aparezca en la respuesta de una petición http.
+    readOnly: true
+  dateUpdated:
+    type: string
+    format: date-time
+    # Para que esta propiedad solo aparezca en la respuesta de una petición http.
+    readOnly: true
 required: 
   - name
   - shipToAddress

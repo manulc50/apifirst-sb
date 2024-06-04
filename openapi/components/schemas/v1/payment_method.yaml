@@ -4,6 +4,8 @@ properties:
     type: string
     format: uuid
     description: Unique identifier representing a specific payment method
+    # Para que esta propiedad solo aparezca en la respuesta de una petición http.
+    readOnly: true
   displayName:
     type: string
     minLength: 2
@@ -24,6 +26,16 @@ properties:
   dateCreated:
     type: string
     format: date-time
+    # Para que esta propiedad solo aparezca en la respuesta de una petición http.
+    readOnly: true
   dateUpdated:
     type: string
     format: date-time
+    # Para que esta propiedad solo aparezca en la respuesta de una petición http.
+    readOnly: true
+required: 
+  - displayName
+  - cardNumber
+  - expiryMonth
+  - expiryYear
+  - cvv
