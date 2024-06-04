@@ -4,6 +4,8 @@ properties:
     type: string
     format: uuid
     description: Unique identifier representing a specific address
+    # Para que esta propiedad solo aparezca en la respuesta de una petición http.
+    readOnly: true
   addressLine1:
     type: string
     description: Address Line 1
@@ -11,7 +13,9 @@ properties:
     maxLength: 100
     example: 123 Main Street
   addressLine2:
-    type: string
+    type:
+      - string
+      - 'null' # Nullable
     description: Address Line 2
     minLength: 3
     maxLength: 100
@@ -33,6 +37,16 @@ properties:
     minLength: 5
     maxLength: 10
     example: 33701
+  dateCreated:
+    type: string
+    format: date-time
+    # Para que esta propiedad solo aparezca en la respuesta de una petición http.
+    readOnly: true
+  dateUpdated:
+    type: string
+    format: date-time
+    # Para que esta propiedad solo aparezca en la respuesta de una petición http.
+    readOnly: true
 required: 
   - addressLine1
   - city
