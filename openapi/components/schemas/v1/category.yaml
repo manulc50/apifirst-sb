@@ -4,17 +4,32 @@ properties:
     type: string
     format: uuid
     description: The unique identifier of the category
+    # Para que esta propiedad solo aparezca en la respuesta de una petición http.
+    readOnly: true
   category:
     type: string
     description: The category of the product
+    minLength: 3
+    maxLength: 255
+    example: Electronics
   description:
     type: string
     description: The description of the category
+    minLength: 3
+    maxLength: 25
+    example: Electronics and Gadgets
   dateCreated:
     type: string
     format: date-time
     description: The date the image was created
+    # Para que esta propiedad solo aparezca en la respuesta de una petición http.
+    readOnly: true
   dateUpdated:
     type: string
     format: date-time
     description: The date the image was updated
+    # Para que esta propiedad solo aparezca en la respuesta de una petición http.
+    readOnly: true
+required: 
+  - category
+  - description

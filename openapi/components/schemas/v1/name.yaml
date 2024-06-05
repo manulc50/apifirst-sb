@@ -1,3 +1,4 @@
+# Nota: Este tipo no tiene propiedad "id" porque va a usarse de forma embebida dentro de otro tipo.
 type: object
 properties:
   prefix:
