@@ -21,16 +21,8 @@ properties:
     minLength: 3
     maxLength: 255
   dateCreated:
-    type: string
-    format: date-time
-    description: The date the image was created
-    # Para que esta propiedad solo aparezca en la respuesta de una petición http.
-    readOnly: true
+    $ref: ../common/iso_timestamp.yaml
   dateUpdated:
-    type: string
-    format: date-time
-    description: The date the image was updated
-    # Para que esta propiedad solo aparezca en la respuesta de una petición http.
-    readOnly: true
+    $ref: ../common/iso_timestamp.yaml
 required: 
   - url
