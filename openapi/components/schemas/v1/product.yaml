@@ -4,9 +4,13 @@ properties:
     type: string
     format: uuid
     description: The unique identifier of the product
+    # Para que esta propiedad solo aparezca en la respuesta de una petición http.
+    readOnly: true
   description:
     type: string
     description: The description of the product
+    minLength: 3
+    maxLength: 255
   dimentions:
     $ref: dimentions.yaml
   categories:
@@ -27,7 +31,14 @@ properties:
     type: string
     format: date-time
     description: The date the image was created
+    # Para que esta propiedad solo aparezca en la respuesta de una petición http.
+    readOnly: true
   dateUpdated:
     type: string
     format: date-time
     description: The date the image was updated
+    # Para que esta propiedad solo aparezca en la respuesta de una petición http.
+    readOnly: true
+required: 
+  - description
+  - price
