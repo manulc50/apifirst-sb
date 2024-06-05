@@ -38,15 +38,9 @@ properties:
     maxLength: 10
     example: 33701
   dateCreated:
-    type: string
-    format: date-time
-    # Para que esta propiedad solo aparezca en la respuesta de una petición http.
-    readOnly: true
+    $ref: ../common/iso_timestamp.yaml
   dateUpdated:
-    type: string
-    format: date-time
-    # Para que esta propiedad solo aparezca en la respuesta de una petición http.
-    readOnly: true
+    $ref: ../common/iso_timestamp.yaml
 required: 
   - addressLine1
   - city
