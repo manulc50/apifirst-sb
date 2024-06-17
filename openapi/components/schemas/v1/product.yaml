@@ -6,6 +6,7 @@ properties:
     description: The unique identifier of the product
     # Para que esta propiedad solo aparezca en la respuesta de una petición http.
     readOnly: true
+    nullable: true
   description:
     type: string
     description: The description of the product
