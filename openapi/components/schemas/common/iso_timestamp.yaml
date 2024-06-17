@@ -5,3 +5,4 @@ example: 2022-08-22T11:43:06-07:00
 title: ISO Timestamp
 # Para que esta propiedad solo aparezca en la respuesta de una petición http.
 readOnly: true
+nullable: true
