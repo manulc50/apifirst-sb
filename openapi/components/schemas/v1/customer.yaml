@@ -13,14 +13,14 @@ properties:
   billToAddress:
     $ref: address.yaml
   email:
-    type: [string, 'null'] # Nullable
+    type: string
+    nullable: true
     maxLength: 255
     minLength: 3
     example: johndoe@test.com
   phone:
-    type:
-      - string
-      - 'null' # Nullable
+    type: string
+    nullable: true
     maxLength: 15
     minLength: 7
     example: 800-555-1212
