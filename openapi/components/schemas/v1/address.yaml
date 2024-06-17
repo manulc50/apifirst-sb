@@ -13,9 +13,8 @@ properties:
     maxLength: 100
     example: 123 Main Street
   addressLine2:
-    type:
-      - string
-      - 'null' # Nullable
+    type: string
+    nullable: true
     description: Address Line 2
     minLength: 3
     maxLength: 100

@@ -15,9 +15,8 @@ properties:
     maxLength: 500
     example: https://test.org/wp-content/uploads/2019/08/iphone.jpg
   altText:
-    type:
-      - string
-      - 'null' # Nullable
+    type: string
+    nullable: true
     minLength: 3
     maxLength: 255
   dateCreated:
