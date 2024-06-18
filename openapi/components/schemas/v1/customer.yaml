@@ -6,6 +6,7 @@ properties:
     description: Unique identifier representing a specific customer
     # Para que esta propiedad solo aparezca en la respuesta de una petición http.
     readOnly: true
+    nullable: true
   name:
     $ref: name.yaml
   shipToAddress:
@@ -26,6 +27,7 @@ properties:
     example: 800-555-1212
   paymentMethods:
     type: array
+    nullable: true
     items:
       $ref: payment_method.yaml
   dateCreated:
