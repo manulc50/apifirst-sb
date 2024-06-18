@@ -6,6 +6,7 @@ properties:
     description: Unique identifier representing a specific address
     # Para que esta propiedad solo aparezca en la respuesta de una petición http.
     readOnly: true
+    nullable: true
   addressLine1:
     type: string
     description: Address Line 1
