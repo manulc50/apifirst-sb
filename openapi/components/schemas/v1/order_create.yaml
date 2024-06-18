@@ -1,0 +1,13 @@
+type: object
+properties:
+  customerId:
+    type: string
+    format: uuid
+  selectPaymentMethod:
+    type: string
+    format: uuid
+  orderLines:
+    type: array
+    items:
+      $ref: order_line_create.yaml
+    description: The order lines of the order

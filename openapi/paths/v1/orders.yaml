@@ -11,3 +11,16 @@ get:
         application/json:
           schema:
             $ref: ../../components/schemas/v1/order_list.yaml
+post: 
+  tags: 
+    -  Order
+  summary: Create Order
+  description: Create Order.
+  operationId: createOrder
+  requestBody: 
+    content:
+      application/json:
+        schema: 
+          $ref: ../../components/schemas/v1/order_create.yaml
+    
+  
