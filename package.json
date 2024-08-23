@@ -8,6 +8,6 @@
     "test": "redocly lint"
   },
   "dependencies": {
-    "@redocly/cli": "^1.16.0"
+    "@redocly/cli": "^1.20.1"
   }
 }
